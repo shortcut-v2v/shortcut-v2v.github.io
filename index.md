@@ -2,16 +2,17 @@
 layout: project_page
 permalink: /
 
-title: Shortcut-V2V: Compression Framework for Video-to-Video Translation based on Temporal Redundancy Reduction
+title: Shortcut-V2V: Compression Framework for Video-to-Video Translation based on Temporal Redundancy Reduction 
 authors:
-    Yeojeong Park
+    Chaeyeon Chung\*, Yeojeong Park\*, Seunghwan Choi, Munkhsoyol Ganbat, Jaegul Choo
 affiliations:
-    King's College, Cambridge
+    KAIST
 paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
 video: https://www.youtube.com/results?search_query=turing+machine
 code: https://github.com/topics/turing-machines
 data: https://huggingface.co/docs/datasets
 ---
+
 
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
