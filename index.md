@@ -2,7 +2,7 @@
 layout: project_page
 permalink: /
 
-title: Shortcut-v2v
+title: Shortcut-V2V: Compression Framework for Video-to-Video Translation based on Temporal Redundancy Reduction 
 authors:
     A. M. Turing
 affiliations:
