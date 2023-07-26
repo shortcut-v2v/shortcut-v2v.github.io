@@ -2,34 +2,28 @@
 layout: project_page
 permalink: /
 
-title: On Computable Numbers, with an Application to the Entscheidungsproblem
+title: Shortcut-V2V: Compression Framework for Video-to-Video Translation based on Temporal Redundancy Reduction
 authors:
-    A. M. Turing
+    Chaeyeon Chung*, Yeojeong Park*, Seunghwan Choi, Munkhsoyol Ganbat, Jaegul Choo
 affiliations:
-    King's College, Cambridge
-paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
-video: https://www.youtube.com/results?search_query=turing+machine
-code: https://github.com/topics/turing-machines
-data: https://huggingface.co/docs/datasets
+    KAIST
+paper: https://shortcut-v2v.github.io/
+video: https://shortcut-v2v.github.io/
+code: https://shortcut-v2v.github.io/
 ---
 
 <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
         <h2>Abstract</h2>
         <div class="content has-text-justified">
-The "computable" numbers may be described briefly as the real
-numbers whose expressions as a decimal are calculable by finite means.
-Although the subject of this paper is ostensibly the computable numbers.
-it is almost equally easy to define and investigate computable functions
-of an integral variable or a real or computable variable, computable
-predicates, and so forth. The fundamental problems involved are,
-however, the same in each case, and I have chosen the computable numbers
-for explicit treatment as involving the least cumbrous technique. I hope
-shortly to give an account of the relations of the computable numbers,
-functions, and so forth to one another. This will include a development
-of the theory of functions of a real variable expressed in terms of computable
-numbers. According to my definition, a number is computable
-if its decimal can be written down by a machine...
+Video-to-video translation aims to generate video frames of a target domain from an input video.
+Despite its usefulness, the existing video-to-video translation methods require enormous computations, necessitating their model compression for wide use.
+While there exist compression methods that improve computational efficiency in various image/video tasks, a generally-applicable compression method for video-to-video translation has not been studied much.
+In response, this paper presents Shortcut-V2V, a general-purpose compression framework for video-to-video translation.
+Shortcut-V2V avoids full inference for every neighboring video frame by approximating the intermediate features of a current frame from those of the preceding frame.
+Moreover, in our framework, a newly-proposed block called AdaBD adaptively blends and deforms features of neighboring frames, which makes more accurate predictions of the intermediate features possible.
+We conduct quantitative and qualitative evaluations using well-known video-to-video translation models on various tasks to demonstrate the general applicability of our framework.
+The results show that Shoutcut-V2V achieves comparable performance compared to the original video-to-video translation model while saving 3.2-5.7x computational cost and 7.8-44x memory at test time.
         </div>
     </div>
 </div>
