@@ -2,7 +2,7 @@
 layout: project_page
 permalink: /
 
-title: Shortcut-V2V\: Compression Framework for Video-to-Video Translation based on Temporal Redundancy Reduction On Computable Numbers, with an Application to the Entscheidungsproblem
+title: Shortcut-V2V Compression Framework for Video-to-Video Translation based on Temporal Redundancy Reduction On Computable Numbers, with an Application to the Entscheidungsproblem
 authors:
     A. M. Turing
 affiliations:
