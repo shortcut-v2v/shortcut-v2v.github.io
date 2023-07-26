@@ -1,7 +1,6 @@
 ---
 layout: project_page
 permalink: /
-
 title: Shortcut-V2V: Compression Framework for Video-to-Video Translation based on Temporal Redundancy Reduction
 authors:
     Chaeyeon Chung*, Yeojeong Park*, Seunghwan Choi, Munkhsoyol Ganbat, Jaegul Choo
