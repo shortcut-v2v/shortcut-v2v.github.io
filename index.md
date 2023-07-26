@@ -7,9 +7,10 @@ authors:
     Chaeyeon Chung*, Yeojeong Park*, Seunghwan Choi, Munkhsoyol Ganbat, Jaegul Choo
 affiliations:
     KAIST
-paper: https://shortcut-v2v.github.io/
-video: https://shortcut-v2v.github.io/
-code: https://shortcut-v2v.github.io/
+paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
+video: https://www.youtube.com/results?search_query=turing+machine
+code: https://github.com/topics/turing-machines
+data: https://huggingface.co/docs/datasets
 ---
 
 <div class="columns is-centered has-text-centered">
