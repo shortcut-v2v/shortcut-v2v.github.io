@@ -1,11 +1,12 @@
 ---
 layout: project_page
 permalink: /
-title: Shortcut-V2V: Compression Framework for Video-to-Video Translation based on Temporal Redundancy Reduction
+
+title: On Computable Numbers, with an Application to the Entscheidungsproblem
 authors:
-    Chaeyeon Chung*, Yeojeong Park*, Seunghwan Choi, Munkhsoyol Ganbat, Jaegul Choo
+    A. M. Turing
 affiliations:
-    KAIST
+    King's College, Cambridge
 paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
 video: https://www.youtube.com/results?search_query=turing+machine
 code: https://github.com/topics/turing-machines
