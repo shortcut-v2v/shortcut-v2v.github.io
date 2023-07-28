@@ -38,17 +38,8 @@ The results show that Shoutcut-V2V achieves comparable performance compared to t
 ## Pipeline
 ![Turing Machine](/static/image/method_iccv.svg)
 
-*Overview of the proposed ShortCutV2V. (a) is an overall architecture of Shorcut-V2V, and (b) shows a detailed architecture of Shortcut block. &uarr and &darr refer to upsampling and downsampling by a factor of 2. Here, `offset G' indicates an offset generator.*
+*Overview of the proposed ShortCutV2V. (a) is an overall architecture of Shorcut-V2V, and (b) shows a detailed architecture of Shortcut block.*
 
-In this paper, we propose Shortcut-V2V, a general compression framework to improve the test-time efficiency in video-to-video translation.
-A video-to-video translation network translates input video frames $\{\mathbf{I}_{t}\}_{t=1}^{N_T}$ into output frames $\{\mathbf{O}_{t}\}_{t=1}^{N_T}$ of a target domain, where $N_T$ indicates the number of frames in a video.
-To avoid temporal redundancy in computations for adjacent frames, Shortcut block approximates the intermediate features $\hat{\mathbf{f}}_{t+i}$ at a current timestep $t+i$ from a decoding layer $l_d \in [N_L - N_d + 1, N_L]$ of a teacher model $T$, where $\mathbf{f}_{t+i} = T_{[1,l_d]}(\mathbf{I}_{t+i})$ and $N_L$ and $N_d$ denotes the number of layers in the teacher model $T$ and only in the decoder, respectively.
-
-Our block leverages the previous frame features $\mathbf{f}_{t}$ and $\mathbf{a}_{t}$, as well as the same timestep's features $\mathbf{a}_{t+i}$, where $\mathbf{a}_{t}$ and $\mathbf{a}_{t+i}$ are extracted from an encoding layer $l_e \in [1, N_e]$. $N_e$ indicates the number of layers in the encoder of a teacher model.
-Here, the previous features $\mathbf{f}_{t}$ allow our model to lightly approximate $\hat{\mathbf{f}}_{t+i}$ by providing similar features while the current frame features $\mathbf{a}_{t+i}$ support synthesis of newly-appeared areas in the current frame.
-To exploit both features, we first globally align previous features. 
-Then, \ourblock simultaneously performs local alignment of the previous features and adaptive blending with the current features.
-Finally, $\mathbf{\hat{f}}_{t+i}$ pass through the following layers in the teacher model to synthesize the final output $\mathbf{\hat{O}}_{t+i} = T_{[l_d+1,N_L]}(\mathbf{\hat{f}}_{t+i})$. 
 
 ## Objective
 Turing's main objective in this paper was to investigate the notion of computability and its relation to the Entscheidungsproblem (the decision problem), which is concerned with determining whether a given mathematical statement is provable or not.
