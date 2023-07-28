@@ -25,7 +25,7 @@ In response, this paper presents Shortcut-V2V, a general-purpose compression fra
 Shortcut-V2V avoids full inference for every neighboring video frame by approximating the intermediate features of a current frame from those of the preceding frame.
 Moreover, in our framework, a newly-proposed block called AdaBD adaptively blends and deforms features of neighboring frames, which makes more accurate predictions of the intermediate features possible.
 We conduct quantitative and qualitative evaluations using well-known video-to-video translation models on various tasks to demonstrate the general applicability of our framework.
-The results show that Shoutcut-V2V achieves comparable performance compared to the original video-to-video translation model while saving __3.2-5.7x__ computational cost and __7.8-44x__ memory at test time.
+The results show that Shoutcut-V2V achieves comparable performance compared to the original video-to-video translation model while saving <b>3.2-5.7x</b> computational cost and <b>7.8-44x</b> memory at test time.
         </div>
     </div>
 </div>
