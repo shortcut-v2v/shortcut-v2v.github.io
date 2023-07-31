@@ -127,42 +127,38 @@
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Qualitative Results</h3>
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h3 class="title is-4">Unsupervised RecycleGAN</h2>
+    <div class="content">
+          <h3 class="title is-4">Unsupervised</h2>
           <p>
             Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
             would be impossible without nerfies since it would require going through a wall.
           </p>
           <video id="unsup" autoplay controls muted loop playsinline width="100%">
-            <source src="./static/videos/original_vs_ours_unsup.mp4"
+            <source src="./static/videos/original_vs_ours_unsup_v2c.mp4"
                     type="video/mp4">
           </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h3 class="title is-4">Vid2Vid</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="vid2vid" controls playsinline width="100%">
-              <source src="./static/videos/original_vs_ours_vid2vid.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
+          <video id="unsup" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/original_vs_ours_unsup_l2v.mp4"
+                    type="video/mp4">
+          </video>
     </div>
+    <div class="content">
+          <h3 class="title is-4">Vid2Vid</h2>
+          <p>
+            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+            would be impossible without nerfies since it would require going through a wall.
+          </p>
+          <video id="unsup" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/original_vs_ours_vid2vid_e2f.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="unsup" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/original_vs_ours_vid2vid_l2c.mp4"
+                    type="video/mp4">
+          </video>
+    </div>
+    
+</div>
     <!--/ Matting. -->
 
 
