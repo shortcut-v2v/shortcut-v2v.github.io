@@ -127,11 +127,14 @@
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Qualitative Results</h3>
+    <p>
+      We conduct experiments on various tasks with widely-used video-to-video translation models, Unsupervised RecycleGAN and Vid2Vid.
+    </p>
     <div class="content">
-          <h3 class="title is-4">Unsupervised</h2>
+          <h3 class="title is-4">Unsupervised RecycleGAN</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            Unsupervised RecycleGAN (Unsup) is the state-of-art video-to-video translation model among CycleGAN-based ones.
+            We perform experiments for Unsup on Viper &rarr; Cityscapes (V2C) and translate the videos from Viper dataset to their corresponding segmentation label maps, Viper\textrightarrow Label (V2L), and vice versa, Label &rarr; Viper (L2V).
           </p>
           <video id="unsup" autoplay controls muted loop playsinline width="100%">
             <source src="./static/videos/original_vs_ours_unsup_v2c.mp4"
@@ -145,8 +148,8 @@
     <div class="content">
           <h3 class="title is-4">Vid2Vid</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            Vid2Vid is a widely-used Pix2PixHD-based video-to-video translation network that serves as a base architecture for various recent video-to-video translation models.
+            According to the original model, we evaluate Shorcut-V2V on Edge &rarr; Face (E2F) and Label &rarr; Cityscapes (L2C).
           </p>
           <video id="unsup" autoplay controls muted loop playsinline width="100%">
             <source src="./static/videos/original_vs_ours_vid2vid_e2f.mp4"
@@ -159,6 +162,43 @@
     </div>
     
 </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Comparison to Baselines</h3>
+    <div class="content">
+          <h3 class="title is-4">Unsupervised RecycleGAN</h2>
+          <p>
+            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+            would be impossible without nerfies since it would require going through a wall.
+          </p>
+          <video id="unsup" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/comparison_v2c.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="unsup" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/comparison_l2v.mp4"
+                    type="video/mp4">
+          </video>
+    </div>
+    <div class="content">
+          <h3 class="title is-4">Vid2Vid</h2>
+          <p>
+            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
+            would be impossible without nerfies since it would require going through a wall.
+          </p>
+          <video id="unsup" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/comparison_e2f.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="unsup" autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/comparison_l2c.mp4"
+                    type="video/mp4">
+          </video>
+    </div>
+    
+</div>
+</section>
     <!--/ Matting. -->
 
 
