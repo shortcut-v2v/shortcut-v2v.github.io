@@ -33,7 +33,9 @@ The results show that Shoutcut-V2V achieves comparable performance compared to t
 ---
 
 ## Pipeline
+content from overview blah blah blah
 ![Turing Machine](/static/image/method_iccv.svg)
 
 *Figure 1. Overview of the proposed ShortCutV2V. (a) is an overall architecture of Shorcut-V2V, and (b) shows a detailed architecture of Shortcut block.*
+
 
