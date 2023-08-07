@@ -82,18 +82,6 @@
                   </a>
               </span>
               {% endif %}
-<!--               <!-- Dataset Link. -->
-              {% if page.data %}
-              <span class="link-block">
-                <a href="{{ page.data }}"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-database"></i>
-                  </span>
-                  <span>Data</span>
-                </a>
-              </span>
-              {% endif %} -->
             </div>
           </div>
         </div>
@@ -136,15 +124,17 @@
           <p>
             Unsupervised RecycleGAN (Unsup) is the state-of-art video-to-video translation model among CycleGAN-based ones.
             We perform experiments for Unsup on Viper &rarr; Cityscapes (V2C) and translate the videos from Viper dataset to their corresponding segmentation label maps, Viper &rarr; Label (V2L), and vice versa, Label &rarr; Viper (L2V).
-          </p>
-          <video id="unsup" autoplay controls muted loop playsinline width="80%">
-            <source src="./static/videos/original_vs_ours_unsup_v2c.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="unsup" autoplay controls muted loop playsinline width="80%">
-            <source src="./static/videos/original_vs_ours_unsup_l2v.mp4"
-                    type="video/mp4">
-          </video>
+            </p>
+        <center>
+            <video id="unsup" autoplay controls muted loop playsinline width="80%">
+              <source src="./static/videos/original_vs_ours_unsup_v2c.mp4"
+                      type="video/mp4">
+            </video>
+            <video id="unsup" autoplay controls muted loop playsinline width="80%">
+              <source src="./static/videos/original_vs_ours_unsup_l2v.mp4"
+                      type="video/mp4">
+            </video>
+        </center>
     </div>
     <div class="content">
           <h3 class="title is-4">Vid2Vid</h2>
@@ -152,6 +142,7 @@
             Vid2Vid is a widely-used Pix2PixHD-based video-to-video translation network that serves as a base architecture for various recent video-to-video translation models.
             According to the original model, we evaluate <i>Shortcut-V2V</i> on Edge &rarr; Face (E2F) and Label &rarr; Cityscapes (L2C).
           </p>
+      <center>
           <video id="unsup" autoplay controls muted loop playsinline width="80%">
             <source src="./static/videos/original_vs_ours_vid2vid_e2f.mp4"
                     type="video/mp4">
@@ -160,6 +151,7 @@
             <source src="./static/videos/original_vs_ours_vid2vid_l2c.mp4"
                     type="video/mp4">
           </video>
+      </center>
     </div>
     
 </div>
@@ -180,23 +172,25 @@
               <source src="./static/videos/comparison_v2c.mp4"
                       type="video/mp4">
             </video>
+          
+            <video id="unsup" autoplay controls muted loop playsinline width="80%">
+              <source src="./static/videos/comparison_l2v.mp4"
+                      type="video/mp4">
+            </video>
           </center>
-          <video id="unsup" autoplay controls muted loop playsinline width="80%">
-            <source src="./static/videos/comparison_l2v.mp4"
-                    type="video/mp4">
-          </video>
     </div>
     <div class="content">
           <h3 class="title is-4">Vid2Vid</h2>
-          
-          <video id="unsup" autoplay controls muted loop playsinline width="80%">
-            <source src="./static/videos/comparison_e2f.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="unsup" autoplay controls muted loop playsinline width="80%">
-            <source src="./static/videos/comparison_l2c.mp4"
-                    type="video/mp4">
-          </video>
+          <center>
+            <video id="unsup" autoplay controls muted loop playsinline width="80%">
+              <source src="./static/videos/comparison_e2f.mp4"
+                      type="video/mp4">
+            </video>
+            <video id="unsup" autoplay controls muted loop playsinline width="80%">
+              <source src="./static/videos/comparison_l2c.mp4"
+                      type="video/mp4">
+            </video>
+          </center>
     </div>
     
 </div>
@@ -210,11 +204,12 @@
     </p>
     <br>
     <div class="content">
-          
-          <video id="unsup" autoplay controls muted loop playsinline width="80%">
-            <source src="./static/videos/comparison_v2c.mp4"
-                    type="video/mp4">
-          </video>
+          <center>
+            <video id="unsup" autoplay controls muted loop playsinline width="80%">
+              <source src="./static/videos/comparison_v2c.mp4"
+                      type="video/mp4">
+            </video>
+          </center>
     </div>
     
 </div>
