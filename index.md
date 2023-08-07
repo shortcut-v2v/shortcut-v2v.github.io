@@ -4,9 +4,9 @@ permalink: /
 
 title: 'Shortcut-V2V: Compression Framework for Video-to-Video Translation based on Temporal Redundancy Reduction'
 authors:
-    Chaeyeon Chung*, Yeojeong Park*, Seunghwan Choi, Munkhsoyol Ganbat, Jaegul Choo
+    Chaeyeon Chung*<sup>1</sup>, Yeojeong Park*<sup>1,2</sup>, Seunghwan Choi<sup>1</sup>, Munkhsoyol Ganbat<sup>1</sup>, Jaegul Choo<sup>1</sup>
 affiliations:
-    KAIST
+    <sup>1</sup>KAIST, <sup>2</sup>KT Research & Development Center, KT Corporation
 paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
 video: https://www.youtube.com/results?search_query=turing+machine
 code: https://github.com/topics/turing-machines
