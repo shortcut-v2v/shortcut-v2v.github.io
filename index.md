@@ -4,7 +4,7 @@ permalink: /
 
 title: 'Shortcut-V2V: Compression Framework for Video-to-Video Translation based on Temporal Redundancy Reduction'
 authors:
-    Chaeyeon Chung*<sup>1</sup>, <a href="https://github.com/indigopyj">Yeojeong Park</a>*<sup>1,2</sup>, Seunghwan Choi<sup>1</sup>, Munkhsoyol Ganbat<sup>1</sup>, Jaegul Choo<sup>1</sup>
+    <a href="https://cychungg.github.io/">Chaeyeon Chung</a>*<sup>1</sup>, <a href="https://github.com/indigopyj">Yeojeong Park</a>*<sup>1,2</sup>, <a href="https://github.com/shadow2496">Seunghwan Choi</a><sup>1</sup>, <a href="https://github.com/misheeltoli">Munkhsoyol Ganbat</a><sup>1</sup>, Jaegul Choo<sup>1</sup>
 affiliations:
     <sup>1</sup>KAIST AI, <sup>2</sup>KT Research & Development Center, KT Corporation
 paper: https://arxiv.org/abs/2308.08011
