@@ -211,9 +211,11 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3">Additional Experiments</h3>
+    <h2 class="title is-3">Application to StyleGAN2-based Network</h3>
     <p>
-      VToonify experiments blah blah
+      We apply Shortcut-V2V to a recently-proposed StyleGAN2-based video-to-video translation model, <a href="https://arxiv.org/abs/2209.11224">VToonify</a>. VToonify consists of an encoder and a StyleGAN2 generator. 
+      Our Shortcut block is trained to replace the teacher model layers from the encoder's final layer to the generator's initial layer. 
+      We employ two Shortcut blocks to approximate the features from two distinct branches in a layer of the StyleGAN2 generator: `skip' and `toRGB'.
     </p>
     <br>
     <div class="content">
