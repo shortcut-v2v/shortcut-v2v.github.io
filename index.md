@@ -19,7 +19,7 @@ code: https://github.com/indigopyj/Shortcut-V2V
 Video-to-video translation aims to generate video frames of a target domain from an input video.
 Despite its usefulness, the existing video-to-video translation methods require enormous computations, necessitating their model compression for wide use.
 While there exist compression methods that improve computational efficiency in various image/video tasks, a generally-applicable compression method for video-to-video translation has not been studied much.
-In response, this paper presents Shortcut-V2V, a general-purpose compression framework for video-to-video translation.
+In response, this paper presents *Shortcut-V2V*, a general-purpose compression framework for video-to-video translation.
 Shortcut-V2V avoids full inference for every neighboring video frame by approximating the intermediate features of a current frame from those of the preceding frame.
 Moreover, in our framework, a newly-proposed block called AdaBD adaptively blends and deforms features of neighboring frames, which makes more accurate predictions of the intermediate features possible.
 We conduct quantitative and qualitative evaluations using well-known video-to-video translation models on various tasks to demonstrate the general applicability of our framework.
