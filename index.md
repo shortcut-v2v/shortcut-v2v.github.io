@@ -32,9 +32,9 @@ The results show that Shoutcut-V2V achieves comparable performance compared to t
 
 ## Pipeline
 In this paper, we propose Shortcut-V2V, a general compression framework to improve the test-time efficiency in video-to-video translation.
-As illustrated in Figure 1.(a), given {<b>I</b><sub>t</sub>}<sup>N<sub>T</sub>-1</sup><sub>t=0</sub> as input video frames, we first use full teacher model $T$ to synthesize the output of the first frame.
+As illustrated in Figure 1.(a), given {<b>I</b><sub>t</sub>}<sup>N<sub>T</sub>-1</sup><sub>t=0</sub> as input video frames, we first use full teacher model T to synthesize the output of the first frame.
 Then, for the next frames, our newly-proposed Shortcut block efficiently approximates <b>f</b><sub>t</sub>, the features from the l<sub>d</sub>-th decoding layer of the teacher model. 
-This is achieved by leveraging the l<sub>e</sub>-th-th encoding layer features $\mathbf{a}_{t}$ along with reference features, <b>a</b><sub>ref</sub> and <b>f</b><sub>ref</sub>, from the previous frame. 
+This is achieved by leveraging the l<sub>e</sub>-th-th encoding layer features <b>a</b><sub>t</sub> along with reference features, <b>a</b><sub>ref</sub> and <b>f</b><sub>ref</sub>, from the previous frame. 
 Here, l<sub>d</sub> and l<sub>e</sub> correspond to layer indices of the teacher model.
 Lastly, predicted features <b>f&#770;</b><sub>t</sub> are injected into the following layers of the teacher model to synthesize the final output <b>O&#770;</b><sub>t</sub>.
 To avoid error accumulation, we conduct full teacher inference and update the reference features at every max interval &alpha;.
