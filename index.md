@@ -19,7 +19,7 @@ code: https://github.com/indigopyj/Shortcut-V2V
 Video-to-video translation aims to generate video frames of a target domain from an input video.
 Despite its usefulness, the existing video-to-video translation methods require enormous computations, necessitating their model compression for wide use.
 While there exist compression methods that improve computational efficiency in various image/video tasks, a generally-applicable compression method for video-to-video translation has not been studied much.
-In response, this paper presents *Shortcut-V2V*, a general-purpose compression framework for video-to-video translation.
+In response, this paper presents <i>Shortcut-V2V</i>, a general-purpose compression framework for video-to-video translation.
 Shortcut-V2V avoids full inference for every neighboring video frame by approximating the intermediate features of a current frame from those of the preceding frame.
 Moreover, in our framework, a newly-proposed block called AdaBD adaptively blends and deforms features of neighboring frames, which makes more accurate predictions of the intermediate features possible.
 We conduct quantitative and qualitative evaluations using well-known video-to-video translation models on various tasks to demonstrate the general applicability of our framework.
@@ -31,8 +31,14 @@ The results show that Shoutcut-V2V achieves comparable performance compared to t
 ---
 
 ## Pipeline
-content from overview blah blah blah
-![Turing Machine](/static/image/method_iccv.svg)
+In this paper, we propose Shortcut-V2V, a general compression framework to improve the test-time efficiency in video-to-video translation.
+As illustrated in Figure 1.(a), given $\{\mathbf{I}_{t}\}_{t=0}^{N_T-1}$ as input video frames, we first use full teacher model $T$ to synthesize the output of the first frame. %$\mathbf{I}_{0}$
+Then, for the next frames, our newly-proposed Shortcut block efficiently approximates $\mathbf{f}_{t}$, the features from the $l_d$-th decoding layer of the teacher model. 
+This is achieved by leveraging the $l_e$-th encoding layer features $\mathbf{a}_{t}$ along with reference features, $\mathbf{a}_{ref}$ and $\mathbf{f}_{ref}$, from the previous frame. 
+Here, $l_d$ and $l_e$ correspond to layer indices of the teacher model.
+Lastly, predicted features $\mathbf{\hat{f}}_{t}$ are injected into the following layers of the teacher model to synthesize the final output $\mathbf{\hat{O}}_{t}$.
+To avoid error accumulation, we conduct full teacher inference and update the reference features at every max interval $\alpha$.
+![Turing Machine](/static/image/method_iccv.png)
 
 *Figure 1. Overview of the proposed ShortCutV2V. (a) is an overall architecture of Shorcut-V2V, and (b) shows a detailed architecture of Shortcut block.*
 
