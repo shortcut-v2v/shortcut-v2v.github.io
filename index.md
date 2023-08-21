@@ -7,9 +7,8 @@ authors:
     Chaeyeon Chung*<sup>1</sup>, Yeojeong Park*<sup>1,2</sup>, Seunghwan Choi<sup>1</sup>, Munkhsoyol Ganbat<sup>1</sup>, Jaegul Choo<sup>1</sup>
 affiliations:
     <sup>1</sup>KAIST AI, <sup>2</sup>KT Research & Development Center, KT Corporation
-paper: https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf
-video: https://www.youtube.com/results?search_query=turing+machine
-code: https://github.com/topics/turing-machines
+paper: https://arxiv.org/abs/2308.08011
+code: https://github.com/indigopyj/Shortcut-V2V
 ---
 
 
