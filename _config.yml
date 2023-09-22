@@ -16,6 +16,7 @@
 
 # Build settings
 markdown: kramdown
+url: https://shortcut-v2v.github.io/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
